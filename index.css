@@ -1,7 +1,46 @@
-#basic{
-    background-color: rgb(74, 74, 222);
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.d-flex{
-    flex-wrap: wrap;
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.left-menu, .right-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.left-menu li, .right-menu li {
+    margin-right: 20px;
+}
+
+.left-menu a, .right-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    display: block;
 }
