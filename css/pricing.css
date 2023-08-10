@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
+    background-color: #1e4c90;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +114,7 @@ h1 {
 .next-button {
     margin-top: 20px;
     padding: 10px 90px;
-    background-color: #007bff;
+    background-color: #1e4c90;
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -124,5 +124,5 @@ h1 {
 
 .next-button:hover {
     background-color: #a1c0e1;
-    color: #007bff;
+    color: #1e4c90;
 }
