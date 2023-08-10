@@ -5,14 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout Payment Page</title>
     <link rel="stylesheet" href="/css/payment.css">
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="/js/payment.js"></script>
 </head>
 <body>
     <div class="checkout-container">
         <div>
             <div class="checkout-header">Complete Payment</div>
             <div class="checkout-subheader">Enter your credit or debit card details below</div>
-            <input type="text" class="card-number-input" placeholder="Card Number">
-            <button class="confirm-button"><a href="/html/success.html"></a>Confirm Payment</button>
+            <div id="card-element" class="card-element">
+                <!-- A Stripe Element will be inserted here. -->
+            </div>
+            <button id="confirm-payment-button" class="confirm-button">Confirm Payment</button>
         </div>
         <div class="order-summary bg">
             <div class="heading">
