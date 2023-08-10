@@ -56,14 +56,14 @@ body {
 
 .image-container {
     position: relative;
-    height: 500px; /* Set the height of the container */
+    height: 900px; /* Set the height of the container */
 }
 
 .image-container::before {
     content: "";
     position: absolute;
-    width: 200%;
-    height: 200%;
+    width: 100%;
+    height: 100%;
     background-image: url('/images/img.avif'); /* Replace with your image URL */
     background-size: cover;
     background-position: center;
@@ -84,11 +84,12 @@ body {
 .sub-section{
     font: 25px bold;
 }
-.footer {
+
+.footer-content{
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 20px;
 }
 
 .footer p {

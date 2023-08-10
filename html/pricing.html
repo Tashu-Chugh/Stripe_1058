@@ -8,61 +8,63 @@
 </head>
 <body>
     <div class="pricing-container">
-        <div class="switch">
-            <label>
-                <input type="checkbox" id="subscriptionSwitch">
-                <span class="slider"></span>
-            </label>
-            <span class="switch-label">Yearly</span>
+        <h1>Choose the right plan for you</h1>
+        <div class="main">
+            <table class="pricing-table">
+                <thead>
+                    <tr>
+                        <th>
+                            <label class="switch">
+                                <input type="checkbox" id="subscription-toggle">
+                                <span class="slider"></span>
+                            </label>
+                            <span class="toggle-label">Monthly</span>
+                        </th>
+                        <th class="square">Mobile</th>
+                        <th class="square">Basic</th>
+                        <th class="square">Standard</th>
+                        <th class="premium1">Premium</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monthly price</td>
+                        <td><span class="monthly-price">500 INR</span> / <span class="yearly-price">1000 INR</span></td>
+                        <td><span class="monthly-price">1000 INR</span> / <span class="yearly-price">2000 INR</span></td>
+                        <td><span class="monthly-price">2500 INR</span> / <span class="yearly-price">5000 INR</span></td>
+                        <td class="premium"><span class="monthly-price">5500 INR</span> / <span class="yearly-price">7000 INR</span></td>
+                    </tr>
+                    <tr>
+                        <td>Video Quality</td>
+                        <td>Good</td>
+                        <td>Good</td>
+                        <td>Better</td>
+                        <td class="premium">Best</td>
+                    </tr>
+                    <tr>
+                        <td>Resolution</td>
+                        <td>480p</td>
+                        <td>480p</td>
+                        <td>1080p</td>
+                        <td class="premium">4kK + HDR</td>
+                    </tr>
+                    <tr>
+                        <td>Devices you can use to watch</td>
+                        <td>Phone 
+                            Tablet</td>
+                        <td>Phone
+                            Tablet
+                            Computer TV
+                        </td>
+                        <td>Phone
+                            Tablet Computer TV</td>
+                        <td class="premium">Phone
+                            Tablet Computer TV</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <h1>Choose a Subscription Plan</h1>
-        <table class="pricing-table">
-            <thead>
-                <tr>
-                    <th>Plan Name</th>
-                    <th>Price</th>
-                    <th>Video Quality</th>
-                    <th>Resolution</th>
-                    <th>Devices</th>
-                    <th>Active Screens</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Basic</td>
-                    <td><span class="monthly-price">100 INR</span> / <span class="yearly-price">1000 INR</span></td>
-                    <td>Good</td>
-                    <td>480p</td>
-                    <td>Phone</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>Standard</td>
-                    <td><span class="monthly-price">200 INR</span> / <span class="yearly-price">2000 INR</span></td>
-                    <td>Good</td>
-                    <td>720p</td>
-                    <td>Phone+Tablet</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>Premium</td>
-                    <td><span class="monthly-price">500 INR</span> / <span class="yearly-price">5000 INR</span></td>
-                    <td>Better</td>
-                    <td>1080p</td>
-                    <td>Phone+Tablet+Computer</td>
-                    <td>5</td>
-                </tr>
-                <tr>
-                    <td>Regular</td>
-                    <td><span class="monthly-price">700 INR</span> / <span class="yearly-price">7000 INR</span></td>
-                    <td>Best</td>
-                    <td>4K+HDR</td>
-                    <td>Phone+Tablet+TV</td>
-                    <td>10</td>
-                </tr>
-            </tbody>
-        </table>
-        <button class="next-button "><a href="/payment.html">Next</a></button>
+        <button class="next-button"><a href="/html/payment.html">Next</a></button>
     </div>
 </body>
 </html>

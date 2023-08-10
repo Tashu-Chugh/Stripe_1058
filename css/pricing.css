@@ -22,46 +22,60 @@ body {
     width: 100%;
     max-width: 800px;
 }
-
-.switch {
+.main{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
 }
 
-.switch-label {
-    margin-left: 10px;
-    font-weight: bold;
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
 }
 
 .switch input {
-    display: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
 .slider {
-    position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 20px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background-color: #ccc;
-    border-radius: 20px;
-    margin-right: 10px;
+    transition: 0.4s;
+    border-radius: 30px;
 }
 
 .slider:before {
-    content: "";
     position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: #007bff;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    transition: 0.4s;
     border-radius: 50%;
-    transition: 0.2s;
 }
 
-.switch input:checked + .slider:before {
-    transform: translateX(20px);
+input:checked + .slider {
+    background-color: #2196F3;
 }
+
+input:checked + .slider:before {
+    transform: translateX(30px);
+}
+
+.toggle-label {
+    display: inline-block;
+    margin-left: 10px;
+}
+
 
 h1 {
     margin-bottom: 20px;
@@ -69,35 +83,46 @@ h1 {
 
 .pricing-table {
     width: 100%;
-    border-collapse: collapse;
+    border: none;
     margin-top: 20px;
 }
 
 .pricing-table th, .pricing-table td {
     padding: 10px;
-    text-align: center;
-    border: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
-
+.square{
+    background-color: #a1c0e1;
+    font: 30px bold white;
+}
 .pricing-table th {
-    background-color: #f0f8ff;
+    border: 10px;
     font-weight: bold;
 }
 
 .pricing-table td:first-child {
-    text-align: left;
+    text-align: right;
 }
-
+.premium1 {
+    font: 30px bold white;
+    background-color: #053865;
+    color: white;
+}
+.premium{
+    font-weight: bold;
+}
 .next-button {
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 10px 90px;
     background-color: #007bff;
-    color: #fff;
+    color: white;
     border-radius: 5px;
     cursor: pointer;
-    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s;
 }
 
 .next-button:hover {
     background-color: #a1c0e1;
+    color: #007bff;
 }

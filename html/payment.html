@@ -12,24 +12,27 @@
             <div class="checkout-header">Complete Payment</div>
             <div class="checkout-subheader">Enter your credit or debit card details below</div>
             <input type="text" class="card-number-input" placeholder="Card Number">
-            <button class="confirm-button">Confirm Payment</button>
+            <button class="confirm-button"><a href="/html/success.html"></a>Confirm Payment</button>
         </div>
         <div class="order-summary bg">
             <div class="heading">
                 <span><b>Order Summary</b></span>
             </div>
-            <div class="order-summary-item">
-                <span class="plan-name">Plan Name:</span> Basic
-            </div>
-            <div class="order-summary-item">
-                <span class="billing-cycle">Billing Cycle:</span> Monthly
-            </div>
-            <div class="order-summary-item">
-                <span class="plan-price">Plan Price:</span> $10
-            </div>
+            <table class="order-sum">
+                <tr>
+                    <td>Plan name</td>
+                    <td class="right">Basic</td>
+                </tr>
+                <tr>
+                    <td>Billing Cycle</td>
+                    <td class="right">Monthly</td>
+                </tr>
+                <tr>
+                    <td>Plan Price</td>
+                    <td class="right">$10</td>
+                </tr>
+            </table>
         </div>
-        
-        
     </div>
 </body>
 </html>
