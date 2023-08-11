@@ -14,14 +14,13 @@ body {
 .header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
 }
 
 .logo {
-    width: 60px;
-    height: 50px;
+    width: 70px;
+    height: 55px;
+    padding: 5px;
+    padding-left: 10px;
 }
 
 .logo img {
@@ -30,20 +29,22 @@ body {
 }
 
 .top-nav {
-    list-style: none;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: #333;
+    padding: 5px 10px;
 }
 
 .left-menu, .right-menu {
     list-style: none;
     display: flex;
     align-items: center;
-    float: left;
-
 }
 
+.right-menu{
+    float: right;
+}
 .left-menu li, .right-menu li {
     margin-right: 20px;
 }
