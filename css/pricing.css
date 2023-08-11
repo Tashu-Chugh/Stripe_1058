@@ -6,7 +6,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #1e4c90;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,12 +14,9 @@ body {
 
 .pricing-container {
     text-align: center;
-    background-color: #ffffff;
-    border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 800px;
+    justify-content: center;
+    margin: 0;
 }
 .main{
     display: flex;
@@ -82,7 +78,6 @@ h1 {
 }
 
 .pricing-table {
-    width: 100%;
     border: none;
     margin-top: 20px;
 }
@@ -90,39 +85,42 @@ h1 {
 .pricing-table th, .pricing-table td {
     padding: 10px;
     border-bottom: 1px solid #ccc;
+    width: 25%;
 }
 .square{
     background-color: #a1c0e1;
     font: 30px bold white;
+    width: 50%;
+    margin: 10px;
+    
 }
 .pricing-table th {
     border: 10px;
     font-weight: bold;
+
 }
 
 .pricing-table td:first-child {
-    text-align: right;
+    text-align: center;
 }
-.premium1 {
-    font: 30px bold white;
+
+.premium{
+    font-weight: bold;
     background-color: #053865;
     color: white;
 }
-.premium{
-    font-weight: bold;
-}
 .next-button {
-    margin-top: 20px;
     padding: 10px 90px;
+    width: 50%;
     background-color: #1e4c90;
     color: white;
     border-radius: 5px;
     cursor: pointer;
     border: none;
-    transition: background-color 0.3s;
+
 }
 
 .next-button:hover {
-    background-color: #a1c0e1;
+    background-color: #d0e2f5;
     color: #1e4c90;
 }
