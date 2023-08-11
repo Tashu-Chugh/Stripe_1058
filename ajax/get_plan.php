@@ -1,6 +1,7 @@
 <?php 
-	include('connection.php');
-	session_start();
+
+include('connection.php');
+session_start();
 
 if(isset($_POST['hash']))
 {
@@ -24,9 +25,15 @@ if(isset($_POST['hash']))
                    	}
                     
                     $arr['duration']=$_SESSION['plan'];
+                    $_SESSION['cost']=$arr['cost'];
 
 	    }
 	    echo json_encode($arr);
 	}
+
+
+
+
+
 }
 ?>

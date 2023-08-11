@@ -1,5 +1,10 @@
 <?php 
-    
+ session_start();
+// Product Details  
+// Minimum amount is $0.50 US  
+$productName = $_SESSION['package'];  
+$productID = $_SESSION['package'];  
+$productPrice = 1; 
 $currency = "inr"; 
   
 /* 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php session_start();
+<?php 
 require_once '../ajax/config.php';   ?>
 <html lang="en">
 <head>
@@ -33,7 +33,6 @@ require_once '../ajax/config.php';   ?>
                     <div class="spinner hidden" id="spinner"></div>
                             <span id="buttonText">Pay Now</span>
                  </button>
-          
             
          </div>
          <div class="col-sm-2"></div>
@@ -55,13 +54,10 @@ function load_data()
                     success:function(data)
                     {
                         console.log(data);
-                        if(data=='0')
-                        {
                            var da = JSON.parse(data);
-                           document.getElementById('package').innerHtml = da['package'];
-                           document.getElementById('price').innerHtml = da['cost'];
-                           document.getElementById('duration').innerHtml = da['duration'];
-                        }
+                           document.getElementById('package').innerHTML = da['package'];
+                           document.getElementById('price').innerHTML = da['cost'];
+                           document.getElementById('duration').innerHTML= da['duration'];
                         
                         
                     }

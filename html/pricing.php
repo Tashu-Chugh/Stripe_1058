@@ -112,10 +112,6 @@
             <button class="next-button" onclick="redirection();">Next</a></button>
         </div>
     </section>
-        <div class="selected-plan">
-            <h2>Selected Plan Details</h2>
-        </div>
-        
 </body>
 
 <script type="text/javascript">

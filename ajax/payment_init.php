@@ -28,7 +28,7 @@
     } 
     
     if(!empty($request->createCheckoutSession)){ 
-        $stripeAmount = round($productPrice*100, 2); 
+        $stripeAmount = round($_SESSION['cost']*100, 2); 
     
         
         try { 
@@ -36,9 +36,11 @@
                 'line_items' => [[ 
                     'price_data' => [ 
                         'product_data' => [ 
-                            'name' => $plan, 
+                            'name' => $_SESSION['package']
+                            , 
                             'metadata' => [ 
-                                'pro_id' => $plan 
+                                'pro_id' => $_SESSION['package']
+ 
                             ] 
                         ], 
                         'unit_amount' => $stripeAmount, 
