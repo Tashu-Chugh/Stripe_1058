@@ -17,11 +17,9 @@ body {
     background-color: #ffffff;
     border-radius: 5px;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     text-align: left;
-    display: flex;
-    flex-direction: row;
     align-items: flex-start;
+    width: 30%;
 }
 
 .checkout-header {
@@ -30,55 +28,3 @@ body {
     margin-bottom: 10px;
 }
 
-.checkout-subheader {
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.card-number-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.confirm-button {
-    padding: 10px 20px;
-    background-color: #033469;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.order-summary {
-    text-align: left;
-    height: 200px;
-    padding: 5px;
-}
-.bg{
-    background-color: #e3e5ea;
-    width: 50%;
-    margin-left: 20px;
-    height: 200%;
-}
-
-.order-sum td{
-    padding: 5px;
-    width: 100%;
-    border-bottom: 1px solid grey;
-}
-.right{
-    float: right;
-}
-.heading{
-    font: 30px bold;
-    margin-bottom: 10px;
-    border-bottom: 10px #0c0d0d;
-}
-.order-summary-item {
-    margin-bottom: 10px;
-    border-bottom: 10px #161616;
-}

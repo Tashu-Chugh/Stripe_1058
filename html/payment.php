@@ -9,36 +9,39 @@ require_once '../ajax/config.php';   ?>
     
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="normalize.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/payment.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
- <section>
-     <div class="col-sm-12">
-         <div class="col-sm-2"></div>
-         <div class="col-sm-8">
-             
-                <div class="plan-container">
-                    <h2>SELECTED PLAN DETAILS</h2>
-                    <div class="package-name">
-                        <p id="package"></p>
-                    </div>
-                    <div class="package-price">
-                        <p id="price"></p>
-                    </div>
-                    <div class="package-duration">
-                        <p id="duration"></p>
-                    </div>
+    <section class="checkout-container">
+        <div class="col-sm-8">
+            <div class="plan-container">                    
+                <h2 class="checkout-header">Order Summary</h2>
+                <div class="package-name text-center">
+                    <table class="table table-sm text-center">
+                        <tr>
+                            <td>Plan name</td>
+                            <td id="package"></td>
+                        </tr>
+                        <tr>
+                            <td>Plan price</td>
+                            <td id="price"></td>
+                        </tr>
+                        <tr>
+                            <td>Billing Cycle</td>
+                            <td id="duration"></td>
+                        </tr>
+                    </table>
                 </div>
-                  <button class="stripe-button" id="payButton">
-                    <div class="spinner hidden" id="spinner"></div>
-                            <span id="buttonText">Pay Now</span>
-                 </button>
-            
-         </div>
-         <div class="col-sm-2"></div>
-     </div>
- </section>
-        
+            </div>
+            <button class="stripe-button" id="payButton">
+                <div class="spinner hidden" id="spinner"></div>
+                    <span id="buttonText">Confirm Payment</span>
+            </button>
+                
+        </div>
+    </section>       
 </body>
 
 <script src="https://js.stripe.com/v3/"></script>
