@@ -14,7 +14,7 @@ body {
 
 .pricing-container {
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     justify-content: center;
     margin: 0;
 }
@@ -73,13 +73,9 @@ input:checked + .slider:before {
 }
 
 
-h1 {
-    margin-bottom: 20px;
-}
-
 .pricing-table {
     border: none;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .pricing-table th, .pricing-table td {
@@ -94,11 +90,6 @@ h1 {
     margin: 10px;
     
 }
-.pricing-table th {
-    border: 10px;
-    font-weight: bold;
-
-}
 
 .pricing-table td:first-child {
     text-align: center;
@@ -109,15 +100,15 @@ h1 {
     background-color: #053865;
     color: white;
 }
+.center{
+    text-align: center;
+}
 .next-button {
-    padding: 10px 90px;
+    padding: 10px 50px;
     width: 50%;
     background-color: #1e4c90;
     color: white;
     border-radius: 5px;
-    cursor: pointer;
-    border: none;
-
 }
 
 .next-button:hover {

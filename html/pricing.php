@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Page</title>
-    <link rel="stylesheet" href="../css/pricing.css">
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="normalize.min.css">
+    <link rel="stylesheet" href="../css/pricing.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
@@ -15,6 +15,7 @@
         <div>
             <div class="pricing-container">
                 <h1>Choose the right plan for you</h1>
+                <h5>Click on the Package you want to select</h5>
             </div>
             <div class="pricing-table">
                 <table>
@@ -54,20 +55,14 @@
                         <td>480p</td>
                         <td>480p</td>
                         <td>1080p</td>
-                        <td>4kK + HDR</td>
+                        <td>4k + HDR</td>
                     </tr>
                     <tr>
                         <td>Devices you can use to watch</td>
-                        <td>Phone 
-                            Tablet</td>
-                        <td>Phone
-                            Tablet
-                            Computer TV
-                        </td>
-                        <td>Phone
-                            Tablet Computer TV</td>
-                        <td>Phone
-                            Tablet Computer TV</td>
+                        <td>Phone+ Tablet</td>
+                        <td>Phone+ Tablet+ Computer+ TV</td>
+                        <td>Phone+ Tablet+ Computer+ TV</td>
+                        <td>Phone+ Tablet+ Computer+ TV</td>
                     </tr>
                 </tbody>
                 <tbody id="yearly-price" style="display:none;">
@@ -108,7 +103,7 @@
                 </table>
             </div>
         </div>
-        <div>
+        <div class="center">
             <button class="next-button" onclick="redirection();">Next</a></button>
         </div>
     </section>
